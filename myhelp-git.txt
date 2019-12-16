@@ -1,0 +1,49 @@
+	===========================================
+                  Git Shortcuts
+               all prefixed with gt
+     
+    ============== add gta... =================
+       gta       git add
+       gtaa      git add .
+       gtaaa     git add --all
+       gtau      git add --update
+     
+    ============== commit  gtct... ============
+       gtct      git commit
+       gtctm     git commit --message
+       gtctf     git commit --fixup
+     
+    ============== checkout  gtco... ==========
+       gtco       git checkout
+       gtcob      git checkout -b  ** must append branch name **
+       gtcom      git checkout master
+       gtcos      git checkout stage
+       gtcod      git checkout develop
+     
+    ============== status  gtst... ============
+       gtst        git status
+       gtsts       git status --short
+     
+    ============== branch  gtb... =============
+       gtb         git branch
+       gtbd        git branch --delete 
+     
+    ============== diff  gtdf... ==============
+       gtdf        git diff
+       gtdfa       git diff HEAD
+     
+    ============== init  gti... ===============
+       gti         git init
+     
+    ============== log  gtlg... ===============
+       gtlg        git log --graph --oneline --decorate --all
+       gtld        git log --pretty=format:"%h %ad %s" --date=short --all
+     
+    ============== merge  gtmg... =============
+       gtmg        git merge --no-ff
+       gtmga       git merge --abort
+       gtmgc       git merge --continue
+     
+    ============== pull  gtpl... ==============
+       gtpl        git pull
+       gtplr       git pull --rebase
