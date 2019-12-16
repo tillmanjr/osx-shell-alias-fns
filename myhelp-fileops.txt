@@ -1,0 +1,32 @@
+	===========================================
+
+            Bash File Operation Shortcuts
+
+       ==== correct my bad habit =======
+       cd..         cd ..  
+
+       ====== cd to nth parent directories =====
+
+       ..           cd ..                   up 1
+       ...          cd ../../               up 2
+       ....         cd ../../../            up 3
+       .....        cd ../../../../         up 4
+       .4           cd ../../../../         up 4
+       .5           cd ../../../../../      up 5\
+
+      ====== ls and variations =====
+
+      ls            ls -G                   ls - colorize output
+      ll            ls -la                  ls - use a long listing format
+      l.            ls -d .* -G             ls list hidden files
+
+      ===== set to default to confirm ==========
+
+       mv           mv -i
+       cp           cp -i
+       ln           ln -i
+
+      ===== misc default additions ====
+
+      grep          grep --color=auto       grep - colorize output
+      mkdir         mkdir -pv               create all needed folders
