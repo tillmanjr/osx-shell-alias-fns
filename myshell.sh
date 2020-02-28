@@ -21,11 +21,12 @@ more() {
     read -n 1 -s -r -p "More available ... press any key"
 }
 
+
 showgithelp(){
-	less ~/myhelp-git.txt
+	less $USR_SHELL_PATH/myhelp-git.txt
 }
 showfileopshelp() {
-    less ~/myhelp-fileops.txt
+    less $USR_SHELL_PATH/myhelp-fileops.txt
 }
 shownetworkhelp() {
     clear
@@ -99,7 +100,7 @@ showdockerhelp(){
  
 # function to display menus
 show_menus() {
-	# clear
+	clear
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"	
 	echo " T I L L M A N ' S  B A S H  C U S T O M I Z A T I O N S"
     echo "                 What are they again?"
@@ -116,7 +117,7 @@ show_menus() {
     echo " "
 }
 do_quit() {
-    # NOTE: using - exit 0;; - would close the shell
+    # NOTE: exit 0;; - would close the invoking shell
     exit
 }
 # read input from the keyboard and take a action
