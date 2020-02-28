@@ -1,3 +1,7 @@
+#!/bin/bash
+
+function myshell() { $USR_SHELL_PATH/myshell.sh; }
+
 ## ============ postgres ============
 function pgstart() { pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start; }
 function pgstop() { pg_ctl -D /usr/local/var/postgres stop -s -m fast; }
@@ -30,13 +34,10 @@ function dkcbsh() { docker-compose exec "$1" bash; }
 # So, to have different window and tab titles, iterm_window() must be called
 # first. iterm_both() resets this behaviour and has window track tab title again).
 # Source: http://superuser.com/a/344397
-set_iterm_name() {
+function set_iterm_name() {
   mode=$1; shift
   echo -ne "\033]$mode;$@\007"
 }
-iterm_both () { set_iterm_name 0 $@; }
-iterm_tab () { set_iterm_name 1 $@; }
-iterm_window () { set_iterm_name 2 $@; }
-
-
-
+function iterm_both () { set_iterm_name 0 $@; }
+function iterm_tab () { set_iterm_name 1 $@; }
+function iterm_window () { set_iterm_name 2 $@; }
