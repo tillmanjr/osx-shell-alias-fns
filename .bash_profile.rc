@@ -1,5 +1,5 @@
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 ## load my custom functions and my git aliases
-~/myfunctions.sh
+source ~/myfunctions.sh
 source ~/myaliases.sh
