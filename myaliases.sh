@@ -1,3 +1,4 @@
+alias myshell='~/myshell.sh'
 ## ============ ls ============
 ## Colorize the ls output ##
 alias ls='ls -G'
