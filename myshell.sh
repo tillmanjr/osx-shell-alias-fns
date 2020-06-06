@@ -67,6 +67,57 @@ showit2help(){
         pause
 }
 
+showsilliness(){
+    clear
+    echo "============================================================"
+    echo "                     Silly Stuff"
+    echo "============================================================"
+    echo "  Weather          For graph view append -g (cities only)"
+    echo "                        e.g. wtr-sj-g"
+    echo "                   ---------------------------------------"
+    echo "   wtr-sj          Weather forecast for San Jose, CA"
+    echo " "
+    echo "   wtr-pa          Weather forecast for Palo Alto, CA"
+    echo " "
+    echo "   wtr-bos         Weather forecast for Boston, MA"
+    echo " "
+    echo "   wtr-moon        Phase of the moon"
+    echo " "
+    echo "   cheat           Cheat Sheet"
+    echo " "
+    echo "   dict [words]    Lookup word definition"
+    echo "                       e.g. dict run  "
+    echo "                       e.g. dict 'command line'  "
+    echo " "
+        pause
+}
+
+showawshelp(){
+    clear
+	echo "============================================================="
+    echo "              AWS Shortcuts"
+    echo "               prefixed with aws-"
+    echo "============================================================="
+    echo "   aws-login       log in to aws via awscli"
+    echo "                     uses FMI's awscli.command / wrappers..."
+    echo " "
+    echo "   aws-cfg-edit    open credentials and config in VS Code"
+    echo " "
+    echo "   aws-env-clr     clear AWS credential env vars:"
+    echo "                     AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY"
+    echo "                     AWS_SESSION_TOKEN, AWS_SECURITY_TOKEN"
+    echo " "
+    echo "   aws-cfg-less    view aws config, uses less (~/.aws/config)"
+    echo "   aws-cfg-rm      delete aws config (~/.aws/config)"
+    echo "   aws-cfg-2env    export default KEYs to env vars"
+    echo " "
+    echo "   aws-accesskey   output default AWS_ACCESS_KEY_ID"
+    echo "   aws-secretkey   output default AWS_SECRET_ACCESS_KEY_ID"     
+    echo " "
+    echo " "
+        pause
+}
+
 # do something in two()
 showpghelp(){
     clear
@@ -107,12 +158,14 @@ show_menus() {
     echo "                      Remind me!"
 	echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
     echo " "
+    echo "   a) AWS - cli login, helpers and automations"
     echo "   d) Docker Operations"
     echo "   f) File Operations            (via less)"
 	echo "   g) Git shortcuts              (via less)"
 	echo "   i) iTerm 2 Functions"
     echo "   n) Network shortcuts"
 	echo "   p) Postgres shortcuts"
+    echo "   s) Silliness - weather and stuff"
     echo "   q) Exit"
     echo " "
 }
@@ -124,14 +177,16 @@ do_quit() {
 read_options(){
 	local choice
 	# read -p "Enter choice [ g, p, q ] " choice
-    read -rsn1 -p"Select [ f, g, i, n, p, q ] " choice;echo
+    read -rsn1 -p"Select [ a, f, g, i, n, p, s, q ] " choice;echo
 	case $choice in
+        a) showawshelp ;;
         d) showdockerhelp ;;
         f) showfileopshelp ;;
 		g) showgithelp ;;
         i) showit2help ;;
         n) shownetworkhelp ;;
 		p) showpghelp ;;
+        s) showsilliness ;;
 		*) do_quit ;;
 	esac
 }
