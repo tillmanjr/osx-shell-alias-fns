@@ -7,9 +7,24 @@ function pgstart() { pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgre
 function pgstop() { pg_ctl -D /usr/local/var/postgres stop -s -m fast; }
 function pgstatus() { pg_ctl  -D /usr/local/var/postgres status; }
 
+## =========== Dictionary ==========
+## lookup some word, quote arg if multi-word
+function dict() { curl dict.org/d:"$1"; } 
+
+
 ## =========== shell help ==========
 ## create a directory then cd into it
 function mkcd() { mkdir "$1" && cd "$1"; } 
+
+## ============ cd to code and projects ===========
+function getCodePath() {
+  cd ~/code
+}
+function cdcode() {
+  getCodePath
+  cd fmi/dtp
+}
+
 
 # ----------------------
 # Git Functions
