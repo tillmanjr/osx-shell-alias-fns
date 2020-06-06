@@ -12,16 +12,18 @@ $ myshell
                  What are they again?
                       Remind me!
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+ 
+   a) AWS - cli login, helpers and automations
    d) Docker Operations
    f) File Operations            (via less)
    g) Git shortcuts              (via less)
    i) iTerm 2 Functions
    n) Network shortcuts
    p) Postgres shortcuts
+   s) Silliness - weather and stuff
    q) Exit
-
-Select [ f, g, i, n, p, q ]
+ 
+Select [ a, f, g, i, n, p, s, q ] 
 ```
   
 Tapping the `i` key and ...  
@@ -39,6 +41,30 @@ Tapping the `i` key and ...
    iterm_both      reset to Window's title tracks Tab's
                    - no argument
 
+Press any key to continue
+```
+Or instead, tapping the S key...
+```
+============================================================
+                     Silly Stuff
+============================================================
+  Weather          For graph view append -g (cities only)
+                        e.g. wtr-sj-g
+                   ---------------------------------------
+   wtr-sj          Weather forecast for San Jose, CA
+ 
+   wtr-pa          Weather forecast for Palo Alto, CA
+ 
+   wtr-bos         Weather forecast for Boston, MA
+ 
+   wtr-moon        Phase of the moon
+ 
+   cheat           Cheat Sheet
+ 
+   dict [words]    Lookup word definition
+                       e.g. dict run  
+                       e.g. dict 'command line'  
+ 
 Press any key to continue
 ```
 
