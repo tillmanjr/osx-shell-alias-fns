@@ -1,4 +1,10 @@
 # osx-shell-alias-fns
+
+# OBSOLETE  
+## The contents of this repo is being replaced:  
+### 1. zsh instead of bash  
+### 2. improved and more consistent organization and namings  
+  
 My osx bash aliases and functions. 
 I've recreated variants of this so many times I decided to stuff the current variant here
 
